@@ -2,6 +2,41 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.snippet {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snippet__title {
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+}
+
+.snippet__thumbnail {
+  order: 1;
+  width: 30%;
+  height: 30%;
+}
+
+.snippet__description {
+  order: 2;
+  width: 50%;
+  margin: 0;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+
+  /*  for ...*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
 .header__menu {
   display: none;
 }
@@ -30,6 +65,12 @@
 
   tr td:first-child {
     display: none;
+  }
+
+  /*  number of lines*/
+  .snippet__description {
+    -webkit-line-clamp: 4;
+    max-height: 4.9em;
   }
 }
 
@@ -109,6 +150,11 @@
 
   tr td:first-child {
     display: block;
+  }
+
+  .snippet__description {
+    -webkit-line-clamp: 5;
+    max-height: 6.9em;
   }
 }
 
