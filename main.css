@@ -1,4 +1,4 @@
-body, 
+body,
 html {
   margin: 0;
   padding: 0;
@@ -17,14 +17,14 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header,
-nav, 
-footer, 
-section, 
-article, 
+nav,
+footer,
+section,
+article,
 div {
   box-sizing: border-box;
 }
@@ -143,7 +143,6 @@ main {
  *
  */
 
-
 /*
  *
  * Hero
@@ -232,7 +231,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
